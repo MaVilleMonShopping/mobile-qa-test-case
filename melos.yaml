@@ -1,0 +1,8 @@
+name: mobile_qa_test_case
+
+packages:
+  - app
+
+scripts:
+  
+  hello: echo "Hello QA !"
