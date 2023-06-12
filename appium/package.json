@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export APPIUM_OS=android && npm run android",
+    "android": "wdio run ./android.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,8 @@
     "@wdio/mocha-framework": "^8.2.3",
     "@wdio/spec-reporter": "^8.1.2",
     "should": "^13.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
     "wdio-wait-for": "^3.0.1"
   }
 }

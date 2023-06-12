@@ -4,5 +4,24 @@ packages:
   - app
 
 scripts:
-  
-  hello: echo "Hello QA !"
+  appium:build:android:profile:
+    description: Build android profile app for appium testing
+    run: |
+      cd app
+      mkdir build/appium
+      flutter build apk --profile --dart-define=RUN_FOR_TEST=true
+      mv build/app/outputs/flutter-apk/app-profile.apk build/appium/android.apk
+
+  appium:run:
+    description: Run tests for app located at "app/build/appium/android.apk"
+    run: |
+      cd appium > /dev/null
+      npm i > /dev/null
+      npm run android
+  appium:build:run:
+    description: Build App and Run tests
+    run: |
+      set -ex
+      melos run appium:build:android:profile
+      melos run appium:run
+

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
+import 'package:flutter_driver/driver_extension.dart';
 
 void main() {
+  if (const bool.fromEnvironment("RUN_FOR_TEST", defaultValue: false)) {
+    enableFlutterDriverExtension();
+  }
   runApp(const MyApp());
 }
 
