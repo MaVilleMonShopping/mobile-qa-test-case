@@ -12,10 +12,10 @@ exports.config = {
   capabilities: [
     {
       platformName: "Android",
-      "appium:automationName": "Flutter",
+      "appium:automationName": "Uiautomator2",
       "appium:app": "../app/build/appium/android.apk",
-      // "appium:noReset": false,
-      // "appium:fullReset": true,
+      "appium:noReset": false,
+      "appium:fullReset": true,
     },
   ],
   logLevel: "info",

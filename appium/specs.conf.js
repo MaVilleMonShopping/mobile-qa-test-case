@@ -1,6 +1,8 @@
 const specs = [
     // Dumb
-    "./tests/specs/dummy.e2e.js"
+    "./tests/specs/dummy.e2e.js",
+    "./tests/specs/home.e2e.js",
+    "./tests/specs/permission.e2e.js"
 ];
 
 

@@ -1,4 +1,3 @@
-const find = require("appium-flutter-finder");
 const { step } = require("mocha-steps");
 require("should");
 

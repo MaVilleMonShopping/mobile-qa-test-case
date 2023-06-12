@@ -1,9 +1,13 @@
 # mobile-qa-test-case
 
-Application demo avec socle de tests pour Appium
+Application demo avec socle de tests pour Appium.
+Les tests utilisent:
+- Appium
+- [appium-flutter-driver](https://github.com/appium-userland/appium-flutter-driver)
 
 ## Mise en place de l'environnement
 
+- Installer Android Studio + Android SDK + Emulateur android
 - Installer [ASDF](https://asdf-vm.com/guide/getting-started.html)
 - A la racine du projet:
   - lancer la commande:

@@ -1,16 +1,14 @@
 # app
 
-A new Flutter project.
+Une simple application pour tester les compétences Appium d'un candidat
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dictionnaire des widgets
+| Element | Classe Flutter | Clé | Identifiant natif (ressource-id, xPATH)
+| ------- | ---- | ---- | ----
+| Ecran Home | HomeScreen | N/A | N/A 
+| Bouton Accés au formulaire | ListTile | GoToFormScreen | N/A
+| Bouton permission camera | ListTile | PermissionCameraRequest | N/A
+| Popup permission Camera | N/A | N/A | com.android.permissioncontroller:id/grant_singleton
+| Bouton refuser l'accès camera | N/A | N/A | com.android.permissioncontroller:id/permission_deny_button
+| Ecran Formulaire | FormScreen | N/A | N/A
+| Bouton validation formulaire | ElevatedButton | N/A | N/A
